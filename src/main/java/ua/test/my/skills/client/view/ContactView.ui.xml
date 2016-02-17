@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	 xmlns:c="urn:import:com.google.gwt.user.cellview.client"
+	 >
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:SplitLayoutPanel ui:field="panel">
+		<g:north size='200' width="100%">
+			<c:DataGrid ui:field='grid' visible="true"/>
+		</g:north>
+		<g:center>
+			<g:HTML ui:field="html"/>
+		</g:center>
+		<g:east size="400">
+			<g:VerticalPanel>
+				<g:CheckBox ui:field="disableGridCheckboxes" value="false" name="adasd" text="disable checkboxes"/>
+				<g:CheckBox ui:field="disableGridRoleSelection" value="false" text="disable selection"/>
+				<g:Button ui:field="button" text="Go!" height="30px" width="100px"/>
+			</g:VerticalPanel>
+		</g:east>
+	</g:SplitLayoutPanel>
+</ui:UiBinder> 
